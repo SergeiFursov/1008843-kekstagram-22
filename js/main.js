@@ -13,16 +13,16 @@ const getRandomInteger = function (min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-getRandomInteger();
+getRandomInteger(1, 10);
 
 //Функция для проверки максимальной длины строки.
 
 const getStringLength = function (checkedString, maxLineString) {
-  if (checkedString <= maxLineString) {
-    true
+  if (checkedString.length <= maxLineString) {
+    return true
   } else {
-    false
+    return false
   }
 };
 
-getStringLength();
+getStringLength(123, 140);
